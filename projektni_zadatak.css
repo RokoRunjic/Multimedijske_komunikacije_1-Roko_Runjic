@@ -12,9 +12,12 @@ p.michroma-regular {
   padding: 1em 1.1em;
   border: 1px solid #2D2E35; /*tamna siva za granice*/
   border-radius: 7px;
-  margin: 1.1em auto;
   max-width: 605px;
   box-shadow: 0 0 9px #102420, inset 0 0 6px #2B9C9A; /*tamno zelena i cyan ili plava za highlighte*/
+  float: left;
+  margin-left: 5%;
+  margin-right: 3em;
+  text-shadow: 0 0 5px #4BC66E, 0 0 10px #2B9C9A;
 }
 
 h1.audiowide-regular {
@@ -28,3 +31,71 @@ h1.audiowide-regular {
   padding: 0.65em 0;
   border-bottom: 2px solid #2B9C9A; /*cyan za highlight*/
 }
+
+#audiowide-font {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #4BC66E; /*osnovna zelena za tekst - DOBRA ZA JOŠ TEKSTA*/
+  background-color: #15171C; /*ista blaga crna za pozadine*/
+  text-shadow: 0 0 5px #4BC66E, /*ponavljanje zelene za prvi highlight*/ 1px 0 9px #2B9C9A, /*cyan za highlight*/  -1px 0 14px #6A3E8C; /*ljubičasta za dodatak boje*/
+  padding: 0.65em 0;
+  border-bottom: 2px solid #2B9C9A; /*cyan za highlight*/
+}
+
+#umjetnici,
+#filmovi {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #4BC66E;
+  text-shadow: 0 0 5px #4BC66E, 1px 0 9px #2B9C9A, -1px 0 14px #6A3E8C;
+  text-align: center;
+  background-color: #15171C;
+  border-bottom: 1px solid #2B9C9A;
+  padding: 0.4em 0;
+  margin-top: 1.5em;
+}
+
+strong {
+  color: #4BC66E;
+  text-shadow: 0 0 5px #4BC66E, 0 0 8px #2B9C9A;
+}
+
+sub {
+  font-size: 0.75em;
+  color: #2B9C9A;
+}
+
+body {
+  background-color: #15171C;
+}
+
+ul, ol {
+  font-family: "Michroma", sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #1A1C22;
+  padding: 1em 2em;
+  margin: 1.5em auto;
+  border: 1px solid #2D2E35;
+  border-radius: 7px;
+  box-shadow: 0 0 9px #102420, inset 0 0 6px #2B9C9A;
+  color: #C7C9CE;
+}
+
+ul {
+  list-style: square;
+  list-style-position: inside;
+  text-shadow: 0 0 5px #4BC66E, 0 0 10px #2B9C9A;
+}
+
+ol {
+  list-style: decimal-leading-zero; 
+  list-style-position: inside;
+  text-shadow: 0 0 5px #4BC66E, 0 0 10px #2B9C9A;
+}
+
+
+
