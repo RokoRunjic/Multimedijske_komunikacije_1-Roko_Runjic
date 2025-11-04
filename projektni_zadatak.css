@@ -65,24 +65,24 @@ strong {
 
 sub {
   font-size: 0.75em;
-  color: #2B9C9A;
+  color: #2B9C9A; /*cyan za highlight*/
 }
 
 body {
-  background-color: #15171C;
+  background-color: #15171C; /* tamno plava/crna */
 }
 
 ul, ol {
   font-family: "Michroma", sans-serif;
   display: inline-block;
   vertical-align: top;
-  background-color: #1A1C22;
+  background-color: #1A1C22; /*tamno siva*/
   padding: 1em 2em;
   margin: 1.5em auto;
-  border: 1px solid #2D2E35;
+  border: 1px solid #2D2E35; /*siva*/
   border-radius: 7px;
   box-shadow: 0 0 9px #102420, inset 0 0 6px #2B9C9A;
-  color: #C7C9CE;
+  color: #C7C9CE; /*svijetlo siva/bijela */
 }
 
 ul {
@@ -97,5 +97,135 @@ ol {
   text-shadow: 0 0 5px #4BC66E, 0 0 10px #2B9C9A;
 }
 
+form {
+  background-color: #1A1C22; /*tamno siva - blaga razlika od background color*/
+  border: 1px solid #2D2E35;
+  border-radius: 10px;
+  box-shadow: 0 0 9px #102420, inset 0 0 6px #2B9C9A; /* tamno zelena*/
+  padding: 1em;
+  max-width: 450px;
+  margin: 2em 0 2em auto;
+  position: relative;
+  left: -160px; 
+  text-align: left;
+}
 
+fieldset {
+  border: 1px solid #2B9C9A; /*cyan za highlight*/
+  border-radius: 7px;
+  padding: 1em 1.5em 1em 1em;
+  color: #4BC66E;
+  text-align: left;
+}
+
+legend {
+  font-family: "Audiowide", sans-serif;
+  color: #4BC66E;
+  text-shadow: 0 0 5px #4BC66E, 0 0 10px #2B9C9A;
+  font-size: 1.1em;
+}
+
+label {
+  display: block;
+  margin-top: 0.8em;
+  font-family: "Michroma", sans-serif;
+  color: #C7C9CE;
+  text-shadow: 0 0 5px #4BC66E, 0 0 8px #2B9C9A; /*cyan za highlight*/
+  font-size: 0.9em;
+  text-align: left;
+  margin-left: 0;
+  width: 100%;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  padding: 0.5em 0.8em;
+  font-family: "Michroma", sans-serif;
+  font-size: 0.9em;
+  color: #C7C9CE;
+  background-color: #1A1C22;
+  border: 1px solid #2D2E35;
+  border-radius: 7px;
+  box-shadow: 0 0 6px #102420, inset 0 0 5px #2B9C9A;
+  text-shadow: 0 0 5px #4BC66E, 0 0 10px #2B9C9A;
+  transition: all 0.25s ease-in-out;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+  border-color: #4BC66E;
+  box-shadow: 0 0 10px #4BC66E, inset 0 0 6px #4BC66E;
+  color: #4BC66E;
+}
+
+input[type="text"]:active {
+  transform: scale(0.98);
+}
+
+label[for="oumjetnici"] {
+  display: block;
+  clear: both;
+  text-align: center;
+  margin: 1.5em auto 0.3em auto;
+  width: 60%;
+  font-family: "Michroma", sans-serif;
+  color: #C7C9CE;
+  text-shadow: 0 0 5px #4BC66E, 0 0 10px #4BC66E;
+}
+
+#oumjetnici {
+  display: block;
+  width: 55%;
+  margin: 0.4em auto 0;
+  background-color: #1A1C22; /* razlika od background colora za body*/
+  border: 1px solid #2D2E35;
+  border-radius: 7px;
+  box-shadow: 0 0 6px #102420, inset 0 0 6px #2B9C9A;
+  padding: 0.5em 0.8em;
+  font-family: "Michroma", sans-serif;
+  font-size: 0.9em;
+  color: #C7C9CE;
+  text-shadow: 0 0 5px #4BC66E, 0 0 10px #4BC66E;
+  transition: all 0.25s ease-in-out;
+}
+
+#oumjetnici:hover,
+#oumjetnici:focus {
+  border-color: #4BC66E;
+  box-shadow: 0 0 10px #4BC66E, inset 0 0 6px #4BC66E;
+  color: #4BC66E;
+}
+
+#oumjetnici:active {
+  transform: scale(0.97);
+}
+
+button {
+  display: block;
+  margin: 2.5em auto;
+  padding: 0.7em 1.4em;
+  font-family: "Audiowide", sans-serif;
+  font-size: 1em;
+  color: #4BC66E;
+  background-color: #1A1C22;
+  border: 1px solid #2B9C9A;
+  border-radius: 7px;
+  text-shadow: 0 0 6px #4BC66E, 0 0 10px #2B9C9A;
+  box-shadow: 0 0 9px #102420, inset 0 0 6px #2B9C9A;
+  transition: all 0.25s ease-in-out;
+}
+
+button:hover,
+button:focus {
+  background-color: #1A1C22;
+  box-shadow: 0 0 14px #4BC66E, inset 0 0 6px #4BC66E;
+  border-color: #4BC66E;
+}
+
+button:active {
+  background-color: #1A1C22;
+  transform: scale(0.97);
+}
 

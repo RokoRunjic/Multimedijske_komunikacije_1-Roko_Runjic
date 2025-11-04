@@ -31,5 +31,37 @@ Ova sinergija filma, animacije i umjetnosti oblikuje znanstvenu fantastiku kao j
   <li>Neon Genesis Evangelion</li> 
   <li>Blade Runner</li> 
 </ol>
+
+<form>
+  <fieldset>
+    <legend>Filmovi i serije:</legend>
+      <label for="nlfilm">Tvoj najdraži film ili serija s liste:</label>
+      <input type="text" id="nlfilm" name="nlfilm" placeholder="Akira" list="filmovilista">
+      <label for="nfilm">Tvoj najdraži film:</label>
+      <input type="text" id="nfilm" name="nfilm" value="-----">
+   <datalist id="filmovilista">
+     <option value="Cowboy Bebop">
+     <option value="Akira">
+     <option value="Star Wars: A New Hope">
+     <option value="Star Wars: The Empire Strikes Back">
+     <option value="Star Wars: Return of the Jedi">
+     <option value="Neon Genesis Evangelion">
+     <option value="Blade Runner">
+  </datalist>
+  </fieldset>
+</form>
+ 
+<label for="oumjetnici">Odaberi umjetnika:</label>
+<select id="oumjetnici" name="oumjetnici">
+ <option value="Syd Mead">Syd Mead</option>
+ <option value="Ralph McQuarrie">Ralph McQuarrie</option>
+ <option value="Jean Giraud">Jean Giraud</option>
+ <option value="Katsuhiro Otomo">Katsuhiro Otomo</option>
+ <option value="Masamune Shirow">Masamune Shirow</option>
+</select>
+
+
+<button type="button">Pritisni me</button>
+
 </body>
 </html>
