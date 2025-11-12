@@ -229,3 +229,69 @@ button:active {
   transform: scale(0.97);
 }
 
+.sf-tablica {
+  width: 85%;
+  margin: 3em auto;
+  border-collapse: collapse;
+  background-color: #1A1C22;
+  border: 1px solid #2D2E35;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #102420, inset 0 0 8px #2B9C9A;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sf-naslov {
+  background: none;
+  color: #4BC66E;
+  font-family: "Audiowide", sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px #4BC66E, 0 0 12px #2B9C9A;
+  padding: 1em 0;
+  border: none;
+}
+
+.sf-podnaslovi th {
+  background-color: #111;
+  color: #4BC66E;
+  font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #4BC66E, 0 0 10px #2B9C9A;
+  padding: 0.8em;
+  border: 1px solid #2D2E35;
+}
+
+.sf-tablica td {
+  padding: 0.9em 1.2em;
+  border: 1px solid #2D2E35;
+  font-family: "Michroma", sans-serif;
+  font-size: 0.9em;
+  color: #C7C9CE;
+  height: 3em;
+}
+
+.sf-tablica tr:nth-child(odd) {
+  background-color: #181A20;
+}
+.sf-tablica tr:nth-child(even) {
+  background-color: #131519;
+}
+
+.sf-redovi:hover td:not(.sf-vrsta){
+  background-color: #202328;
+  box-shadow: inset 0 0 10px #4BC66E;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sf-vrsta {
+  color: #4BC66E;
+  font-weight: bold;
+  font-family: "Audiowide", sans-serif;
+  text-shadow: 0 0 5px #4BC66E, 0 0 10px #2B9C9A;
+  background-color: #1A1C22;
+}
+
+
+
