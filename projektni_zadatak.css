@@ -348,6 +348,251 @@ button:active { transform: scale(0.97); }
   box-shadow: 0 0 10px #AA1E1E, 0 0 20px #D12B2B, 0 0 30px #FF3F3F; 
 }
 
+.moebius-link {
+  display: block;
+  width: fit-content;
+  margin: 2em auto;
+  padding: 0.6em 1.2em;
+
+  font-family: "Audiowide", sans-serif;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #4BC66E;
+
+  border: 1px solid #2B9C9A;
+  border-radius: 7px;
+  background-color: #1A1C22;
+
+  text-shadow: 0 0 6px #4BC66E, 0 0 10px #2B9C9A;
+  box-shadow: 0 0 9px #102420, inset 0 0 6px #2B9C9A;
+
+  transition: 0.3s ease-in-out;
+}
+
+.moebius-link:hover {
+  color: #4BC66E;
+  border-color: #4BC66E;
+  box-shadow: 0 0 16px #4BC66E, inset 0 0 8px #4BC66E;
+  transform: scale(1.03);
+}
+
+.galerija {
+  width: 90%;
+  margin: 3em auto;
+  padding: 1em;
+  border: 1px solid #2D2E35;
+  border-radius: 10px;
+  background-color: #1A1C22;
+  box-shadow: 0 0 12px #102420, inset 0 0 8px #2B9C9A;
+}
+
+.galerija-naslov {
+  font-family: "Audiowide", sans-serif;
+  color: #4BC66E;
+  text-shadow: 0 0 6px #4BC66E, 0 0 12px #2B9C9A;
+  text-align: center;
+  margin-top: 2.2em;
+  margin-bottom: 0.8em;
+}
+
+.galerija-grupa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-bottom: 2em;
+}
+
+.galerija-grupa img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  border: 1px solid #2D2E35;
+  box-shadow: 0 0 10px #102420, inset 0 0 7px #2B9C9A;
+  transition: 0.3s ease-in-out;
+  background-color: #111;
+}
+
+.galerija-grupa img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px #4BC66E, inset 0 0 10px #4BC66E;
+}
+
+.youtube {
+  width: 80%;
+  max-width: 800px;
+  margin: 3em auto;
+  border: 1px solid #2B9C9A;
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+
+  background-color: #000;
+  box-shadow: 0 0 12px #102420, inset 0 0 8px #2B9C9A;
+}
+
+.youtube iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+.nasa {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.nasa-naslov {
+  font-family: "Audiowide", sans-serif;
+  color: #4bc66e;
+  text-shadow: 0 0 8px #4bc66e;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.nasa-karta {
+  width: 100%;
+  height: 600px;
+
+  border: 2px solid #4bc66e;
+  border-radius: 10px;
+  background: #0b0f11;
+
+  box-shadow:
+    0 0 15px #4bc66e80,
+    0 0 25px #4bc66e40 inset;
+
+  display: block;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.nasa-karta:hover {
+  box-shadow:
+    0 0 25px #4bc66eaa,
+    0 0 35px #4bc66e66 inset;
+}
+
+@media (max-width: 600px) {
+
+h1.audiowide-regular,
+#audiowide-font {
+  font-size: 1.4em;
+  padding: 0.6em 0;
+}
+
+#umjetnici,
+#filmovi,
+#sf-palete {
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+p.michroma-regular {
+  max-width: 95%;
+  padding: 0.8em;
+  margin: 1em auto;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul, ol {
+  width: 90%;
+  padding: 1em;
+  margin: 1em auto;
+  display: block;
+}
+
+form {
+  width: 90%;
+  max-width: none;
+  left: 0;
+  margin: 2em auto;
+  text-align: left;
+  padding: 1em;
+}
+
+fieldset {
+  padding: 0.8em 1em;
+}
+
+label {
+  font-size: 0.85em;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+#oumjetnici {
+  width: 80%;
+  font-size: 0.85em;
+}
+
+button {
+  margin: 2em auto;
+  padding: 0.6em 1.2em;
+  font-size: 0.9em;
+}
+
+.sf-tablica {
+  width: 100%;
+  font-size: 0.8em;
+}
+
+#palete-skupa {
+  flex-direction: column;
+  gap: 1em;
+}
+
+#d1, #d2, #d3, #d4, #d5, #d6, #d7 {
+  width: 45px;
+  height: 45px;
+  margin: 0 3px 3px 3px;
+}
+
+.galerija {
+  width: 96%;
+  padding: 0.6em;
+}
+
+.galerija-grupa {
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+
+.galerija-naslov {
+  font-size: 1.1em;
+}
+
+.galerija-grupa img {
+  border-radius: 5px;
+}
+
+.youtube iframe {
+  height: 250px;
+}
+
+.nasa-naslov {
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  margin-bottom: 0.8em;
+}
+
+.nasa-karta {
+  height: 300px;
+  border-width: 1.4px;
+  box-shadow: 0 0 10px #4bc66e70, 0 0 15px #4bc66e40 inset;
+}
+
+}
+
+
+
+
+
   
 
 
