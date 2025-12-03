@@ -353,19 +353,15 @@ button:active { transform: scale(0.97); }
   width: fit-content;
   margin: 2em auto;
   padding: 0.6em 1.2em;
-
   font-family: "Audiowide", sans-serif;
   font-size: 1.1em;
   text-decoration: none;
   color: #4BC66E;
-
   border: 1px solid #2B9C9A;
   border-radius: 7px;
   background-color: #1A1C22;
-
   text-shadow: 0 0 6px #4BC66E, 0 0 10px #2B9C9A;
   box-shadow: 0 0 9px #102420, inset 0 0 6px #2B9C9A;
-
   transition: 0.3s ease-in-out;
 }
 
@@ -425,7 +421,6 @@ button:active { transform: scale(0.97); }
   border-radius: 10px;
   padding: 0;
   overflow: hidden;
-
   background-color: #000;
   box-shadow: 0 0 12px #102420, inset 0 0 8px #2B9C9A;
 }
@@ -454,15 +449,10 @@ button:active { transform: scale(0.97); }
 .nasa-karta {
   width: 100%;
   height: 600px;
-
   border: 2px solid #4bc66e;
   border-radius: 10px;
   background: #0b0f11;
-
-  box-shadow:
-    0 0 15px #4bc66e80,
-    0 0 25px #4bc66e40 inset;
-
+  box-shadow: 0 0 15px #4bc66e80, 0 0 25px #4bc66e40 inset;
   display: block;
   margin: 0 auto;
   transition: box-shadow 0.3s ease;
@@ -586,7 +576,6 @@ button {
   border-width: 1.4px;
   box-shadow: 0 0 10px #4bc66e70, 0 0 15px #4bc66e40 inset;
 }
-
 }
 
 
