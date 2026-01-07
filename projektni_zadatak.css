@@ -803,7 +803,98 @@ button {
 }
 }
 
+.intslike-naslov {
+  font-family: "Audiowide", sans-serif;
+  color: #4BC66E;
+  text-align: center;
+  margin: 3em 0 1.2em;
+  text-shadow: 0 0 6px #4BC66E, 0 0 12px #2B9C9A;
+}
 
+.interaktivne-slike {
+  width: 70%;
+  max-width: 720px;
+  margin: 0 auto 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.intslika {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2D2E35;
+  box-shadow: 0 0 12px #102420, inset 0 0 8px #2B9C9A;
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.intslika:hover {
+  box-shadow:
+    0 0 28px #4BC66E,
+    0 14px 32px rgba(0, 0, 0, 0.65),
+    inset 0 0 12px #4BC66E;
+}
+
+.intslika::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.intslika:hover::after {
+  opacity: 1;
+}
+
+.intslika.alien {
+  background-image: url("Interaktivne_slike/alien1.jpg");
+}
+.intslika.alien::after {
+  background-image: url("Interaktivne_slike/alien2.jpg");
+}
+
+.intslika.BR {
+  background-image: url("Interaktivne_slike/BR1.jpg");
+}
+.intslika.BR::after {
+  background-image: url("Interaktivne_slike/BR2.jpg");
+}
+
+.intslika.Dune {
+  background-image: url("Interaktivne_slike/Dune1.jpg");
+}
+.intslika.Dune::after {
+  background-image: url("Interaktivne_slike/Dune2.jpg");
+}
+
+.intslika:active {
+  transform:
+    perspective(1000px)
+    scale(0.95)
+    rotateY(-12deg)
+    rotateZ(1deg);
+}
+
+.intslika:focus {
+  outline: none;
+  transform:
+    perspective(1000px)
+    scale(1.05)
+    rotateY(14deg)
+    rotateZ(1deg);
+  box-shadow:
+    0 0 35px #4BC66E,
+    inset 0 0 18px #2B9C9A;
+}
 
 
 
