@@ -896,6 +896,97 @@ button {
     inset 0 0 18px #2B9C9A;
 }
 
+@keyframes naslovi-pulsiranje {
+  0%, 100% {
+    text-shadow:
+      0 0 6px #4BC66E,
+      0 0 12px #2B9C9A;
+  }
+  50% {
+    text-shadow:
+      0 0 12px #4BC66E,
+      0 0 22px #2B9C9A,
+      0 0 32px #6A3E8C;
+  }
+}
+
+h1.audiowide-regular,
+#umjetnici,
+#filmovi,
+#sf-palete,
+.intslike-naslov {
+  animation: naslovi-pulsiranje 4.5s ease-in-out infinite;
+}
+
+@keyframes liste-sadrzaj {
+  0%   { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
+ul > li:nth-child(odd),
+ol > li:nth-child(odd) {
+  animation: liste-sadrzaj 2.5s ease-in-out infinite alternate;
+}
+
+ul > li:nth-child(even),
+ol > li:nth-child(even) {
+  animation: liste-sadrzaj 3.2s ease-in-out infinite alternate;
+}
+
+@keyframes palete {
+  0%, 100% { filter: brightness(1); }
+  50%      { filter: brightness(1.35); }
+}
+
+#palete-skupa > .paleta > div:nth-of-type(1) {
+  animation: palete 3.5s ease-in-out infinite;
+}
+
+#palete-skupa > .paleta > div:nth-of-type(2) {
+  animation: palete 4.5s ease-in-out infinite;
+}
+
+#palete-skupa > .paleta > div:nth-of-type(3) {
+  animation: palete 5.5s ease-in-out infinite;
+}
+
+@keyframes galerija-float {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-6px); }
+}
+
+.galerija-grupa > img:nth-child(1):hover {
+  animation: galerija-float 0.4s ease-out forwards;
+}
+
+.galerija-grupa > img:nth-child(2):hover {
+  animation: galerija-float 0.5s ease-out forwards;
+}
+
+.galerija-grupa > img:nth-child(3):hover {
+  animation: galerija-float 0.6s ease-out forwards;
+}
+
+@keyframes intslike {
+  0%, 100% {
+    box-shadow: 0 0 10px #102420, inset 0 0 6px #2B9C9A;
+  }
+  50% {
+    box-shadow: 0 0 22px #4BC66E, inset 0 0 12px #4BC66E;
+  }
+}
+
+.interaktivne-slike > .intslika {
+  animation: intslike 6s ease-in-out infinite;
+}
+
+button:hover + .sf-tablica {
+  animation:  naslovi-pulsiranje 2s ease-in-out infinite;
+}
+
+.synth:hover ~ audio {
+  filter: drop-shadow(0 0 12px #4BC66E);
+}
 
 
 
